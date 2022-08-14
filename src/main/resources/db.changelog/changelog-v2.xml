@@ -1,0 +1,24 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.0.xsd
+		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet id="2" author="akash" >
+        <ext:insertOne collectionName="Book">
+            <ext:document>
+                {
+                id:13,
+                bookName: "gab",
+                authorName: "mab",
+                mobNo:"9876",
+                altmobNo:"1234",
+                dob:"120182"
+                }
+            </ext:document>
+        </ext:insertOne>
+    </changeSet>
+</databaseChangeLog>
+
